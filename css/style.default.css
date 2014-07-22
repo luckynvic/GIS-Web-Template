@@ -1,0 +1,126 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	padding: 0;
+}
+
+#map-canvas {
+	/*height: 100%;*/
+	width: 100%;
+	top: 50px;
+	bottom: 0px;
+	position: absolute;
+}
+#map-inset {
+	height: 200px;
+}
+#map-canvas img, #map-inset img {
+	max-width: none;
+}
+
+#map-canvas, #map-inset * {.box-sizing(content-box);
+}
+
+#sidemenu {
+	position: absolute;
+	top: 60px;
+	bottom: 10px;
+	left: 5px;
+	width: 270px;
+	opacity: 0.9;
+	filter: alpha(opacity=90); /* For IE8 and earlier */
+	padding: 5px;
+	overflow: hidden;
+}
+#search-box {
+	position: absolute;
+	top: 60px;
+	left: 280px;
+}
+#app-nav-bar {
+	/*position: absolute;*/
+	display: block;
+	width: 100%;
+}
+.point-list-view {
+	/*overflow-y: scroll;*/
+}
+.point-item:hover {
+	border-left: 5px solid rgb(66 , 139, 202);
+}
+
+.point-item h4 {
+	margin: 0 5px 0 0;
+}
+
+.point-item {
+	padding-left: 10px;
+	border-left: 5px solid rgb(0, 0, 0,0.5);
+}
+
+.point-item.active {
+	color: white;
+}
+.point-item-thumbnail {
+	margin-bottom: 20px;
+}
+
+.point-info {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+#point-gallery-slide {
+	max-height: 200px;
+	min-height: 100px;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input {
+	margin-bottom: 10px;
+}
+
+/*HELPER*/
+
+.divider10 {
+	height: 10px;
+	clear: both;
+}
+
+.margin-right-10 {
+	margin-right: 10px;
+}
+
+/* PLUGIN */
+.mCSB_container {
+	margin-right: 20px;
+}
+
+/*Overwrite bootstrap */
+
+body.modal-open {
+	margin-right: 0;
+}
